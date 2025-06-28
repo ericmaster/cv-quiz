@@ -1,0 +1,222 @@
+[
+  {
+    "question": "What is a defining characteristic of a point operator in image processing?",
+    "options": [
+      "It modifies each pixel independently of its neighbors",
+      "It uses convolution with a kernel",
+      "It averages neighboring pixel values",
+      "It segments objects in an image"
+    ],
+    "answer": "It modifies each pixel independently of its neighbors",
+    "explanation": "Point operators operate on a single pixel at a time without considering surrounding pixels."
+  },
+  {
+    "question": "What does gamma correction primarily aim to adjust?",
+    "options": [
+      "The non-linear response of displays and human vision to brightness",
+      "The color saturation of an image",
+      "The spatial frequency of image patterns",
+      "The sharpness of edges in an image"
+    ],
+    "answer": "The non-linear response of displays and human vision to brightness",
+    "explanation": "Gamma correction compensates for the non-linear perception of brightness in human vision and display systems."
+  },
+  {
+    "question": "Which of the following operations is NOT a point operator?",
+    "options": [
+      "Gaussian blur",
+      "Brightness adjustment",
+      "Gamma correction",
+      "Image inversion"
+    ],
+    "answer": "Gaussian blur",
+    "explanation": "Gaussian blur uses a neighborhood of pixels, so it is a filtering operation, not a point operator."
+  },
+  {
+    "question": "What is the goal of histogram equalization?",
+    "options": [
+      "To enhance image contrast by redistributing pixel intensities",
+      "To increase image resolution",
+      "To suppress noise using local averaging",
+      "To convert grayscale images to binary"
+    ],
+    "answer": "To enhance image contrast by redistributing pixel intensities",
+    "explanation": "Histogram equalization spreads out intensity values to improve contrast in images."
+  },
+  {
+    "question": "In image processing, what does the formula I_out = α * I_in + β represent?",
+    "options": [
+      "Brightness and contrast adjustment",
+      "Histogram equalization",
+      "Thresholding",
+      "Convolution operation"
+    ],
+    "answer": "Brightness and contrast adjustment",
+    "explanation": "This linear transformation scales contrast (α) and shifts brightness (β)."
+  },
+  {
+    "question": "Which filter is used to detect vertical edges in an image?",
+    "options": [
+      "Sobel Y filter",
+      "Box filter",
+      "Gaussian filter",
+      "Sobel X filter"
+    ],
+    "answer": "Sobel Y filter",
+    "explanation": "The Sobel Y filter computes gradients in the vertical direction to detect vertical edges."
+  },
+  {
+    "question": "What does the term 'impulse response' refer to in the context of filtering?",
+    "options": [
+      "The output of a filter when applied to a unit impulse input",
+      "The average intensity of an image",
+      "The change in brightness over time",
+      "The smoothing function of a filter"
+    ],
+    "answer": "The output of a filter when applied to a unit impulse input",
+    "explanation": "The impulse response shows how a filter reacts to a single active pixel."
+  },
+  {
+    "question": "Which of the following is a separable filter?",
+    "options": [
+      "Gaussian filter",
+      "Median filter",
+      "Sobel filter",
+      "Laplacian filter"
+    ],
+    "answer": "Gaussian filter",
+    "explanation": "Gaussian filters can be separated into horizontal and vertical 1D filters, which reduces computation."
+  },
+  {
+    "question": "What property does a linear filter obey that non-linear filters do not?",
+    "options": [
+      "Superposition principle",
+      "Local adaptation",
+      "Color constancy",
+      "Edge preservation"
+    ],
+    "answer": "Superposition principle",
+    "explanation": "Linear filters obey the superposition principle: the response to a sum is the sum of the responses."
+  },
+  {
+    "question": "What type of filtering is typically used for noise reduction by averaging pixel values?",
+    "options": [
+      "Box filter",
+      "Sobel filter",
+      "Histogram equalization",
+      "Unsharp masking"
+    ],
+    "answer": "Box filter",
+    "explanation": "A box filter replaces each pixel with the average of its neighbors, which reduces noise."
+  },
+  {
+    "question": "Which filtering technique is best suited to enhance fine local contrast while limiting noise amplification?",
+    "options": [
+      "CLAHE (Contrast Limited Adaptive Histogram Equalization)",
+      "Global histogram equalization",
+      "Gaussian blur",
+      "Median filtering"
+    ],
+    "answer": "CLAHE (Contrast Limited Adaptive Histogram Equalization)",
+    "explanation": "CLAHE enhances local contrast and clips histogram peaks to avoid over-amplifying noise."
+  },
+  {
+    "question": "In convolution, what does the kernel represent?",
+    "options": [
+      "Impulse response of the system",
+      "Inverse of the image",
+      "Color transformation matrix",
+      "Mask used for thresholding"
+    ],
+    "answer": "Impulse response of the system",
+    "explanation": "The kernel in convolution is the system’s response to a unit impulse and defines how it reacts to input."
+  },
+  {
+    "question": "What does a large value of gamma (γ > 1) in gamma correction do to an image?",
+    "options": [
+      "Darkens mid-tones",
+      "Brightens shadows",
+      "Reduces contrast",
+      "Inverts the image"
+    ],
+    "answer": "Darkens mid-tones",
+    "explanation": "A gamma value greater than 1 compresses brighter values and darkens mid-tones."
+  },
+  {
+    "question": "Which of the following is used to enhance edges in an image?",
+    "options": [
+      "Unsharp masking",
+      "Histogram equalization",
+      "CLAHE",
+      "Box filter"
+    ],
+    "answer": "Unsharp masking",
+    "explanation": "Unsharp masking sharpens images by subtracting a blurred version from the original."
+  },
+  {
+    "question": "Which operator is used to invert the pixel values of a grayscale image?",
+    "options": [
+      "I_out = 255 - I_in",
+      "I_out = I_in^γ",
+      "I_out = average of neighbors",
+      "I_out = I_in + noise"
+    ],
+    "answer": "I_out = 255 - I_in",
+    "explanation": "This operation inverts each grayscale pixel around the midpoint of the intensity range."
+  },
+  {
+    "question": "Why is CLAHE preferred over global histogram equalization in some cases?",
+    "options": [
+      "It preserves local details better and limits noise amplification",
+      "It computes faster in all cases",
+      "It requires less memory",
+      "It converts grayscale to color"
+    ],
+    "answer": "It preserves local details better and limits noise amplification",
+    "explanation": "CLAHE works on small regions and clips histogram peaks to avoid noise amplification."
+  },
+  {
+    "question": "What does a convolution operation do to an image?",
+    "options": [
+      "Combines image with a filter kernel via weighted sums",
+      "Replaces all pixel values with 0",
+      "Rotates the image",
+      "Enhances color saturation"
+    ],
+    "answer": "Combines image with a filter kernel via weighted sums",
+    "explanation": "Convolution computes the sum of products between a kernel and its surrounding pixel neighborhood."
+  },
+  {
+    "question": "Which of the following is an effect of increasing gain in a brightness/contrast adjustment?",
+    "options": [
+      "Enhances contrast by spreading out pixel values",
+      "Shifts the histogram left",
+      "Reduces all pixel intensities uniformly",
+      "Normalizes the histogram"
+    ],
+    "answer": "Enhances contrast by spreading out pixel values",
+    "explanation": "Gain scales the range of pixel values, increasing the distance between light and dark areas."
+  },
+  {
+    "question": "What kind of information does a point operator typically lack?",
+    "options": [
+      "Spatial context from neighboring pixels",
+      "Brightness value at each pixel",
+      "Color information",
+      "Temporal continuity"
+    ],
+    "answer": "Spatial context from neighboring pixels",
+    "explanation": "Point operators do not use information from surrounding pixels and lack spatial awareness."
+  },
+  {
+    "question": "Which is true about histogram equalization?",
+    "options": [
+      "It tries to flatten the histogram to use the full dynamic range",
+      "It preserves the original image structure",
+      "It always increases noise",
+      "It requires user-defined thresholds"
+    ],
+    "answer": "It tries to flatten the histogram to use the full dynamic range",
+    "explanation": "Histogram equalization enhances contrast by distributing pixel intensities more evenly."
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "name": "Computer Vision Quiz",
+  "topics": [
+    {
+      "file": "image_processing.json",
+      "topic": "Image Processing"
+    }
+  ]
+}
